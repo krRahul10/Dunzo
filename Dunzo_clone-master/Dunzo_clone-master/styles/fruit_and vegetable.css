@@ -1,0 +1,138 @@
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main_container_T{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+/* container of title and image */
+#TI_container_T{
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    height: 200px;
+    background-color: rgb(247,253,250);
+    padding-left: 200px;
+
+}
+
+#home_T{
+    font-size: 13px;
+    color: green;
+    margin-left: 130px;
+  
+}
+
+#fv_h_t{
+    color: gray;
+}
+
+/* title image css */
+#TI_img{
+ /* border: 1px solid black; */
+ width: 50px;
+ padding: 20px;
+ border-radius: 15px;
+ background-color: rgb(228,249,241);
+ margin-left: 130px;
+ margin-right: 20px;
+ }
+ 
+ /* css for img and title container */
+ #TI_container_T>div{
+     display: flex;
+ }
+
+ /* css for container_fv_T */
+ #container_fv_T{
+  /* border: 1px solid black; */
+ 
+  width:150px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:20px;
+  margin-left: 330px;
+  /* margin-right: 230px; */
+  cursor: pointer;
+  
+}
+
+/* css for container div */
+#container_fv_T>div{
+display: flex;
+/* border: 1px solid black; */
+width: 480px;
+border-radius: 10px;
+align-items: center;
+padding: 5px;
+padding-left: 10px;
+height: 130px;
+}
+
+/* after clicking any div it will hover */
+#container_fv_T>div:hover{
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+} 
+
+/* css for clock img */
+.cimg_T{
+  width: 10px;
+  margin-right: 5px;
+}
+
+
+/* css for main img */
+.Main_img_T{
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+
+/* css for km_style_t */
+.km_style_t{
+  margin-right: 15px;
+}
+
+.location_T,.km_style_t,.cimg_T,.min_t{
+  color: gray;
+}
+
+@media screen and  (max-width: 800px)  {
+    #TI_container_T{
+        /* border: 1px solid black; */
+        height: 200px;
+        background-color: rgb(247,253,250);
+        padding-left: 100px;
+    
+    }
+
+     /* css for container_fv_T */
+ #container_fv_T{
+    /* border: 1px solid black; */
+    width:160px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    margin-left: 150px;
+    /* margin-right: 230px; */
+    cursor: pointer;
+    
+  }
+
+    /* css for container div */
+ #container_fv_T>div{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 280px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    height: 130px;
+    }
+    
+
+}

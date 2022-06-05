@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/2ndFvPage.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+
+<body>
+ 
+    <div id="Maincontainer_T">
+
+          <!-- navbar container -->
+          <div id="navbar-R">
+        
+              </div>
+
+        <!-- main product container -->
+        <div id="Product_container"> </div>
+
+        <!-- searchBar -->
+        <div id="searchbarDiv"></div>
+
+        <!-- bottom_div -->
+        <div id="last_div_T">
+            <div id="last_first_div_T"></div>
+            <div id="last_secondd_div_T"></div>
+            <div id="last_third_div">
+                <h2>Your Cart</h2>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+
+<!-- Navbar Import -->
+<script type="module">
+    import navbar from "./components/navbar.js"
+ console.log("navbar",navbar)
+let navbar_div=document.getElementById('navbar-R')
+ navbar_div.innerHTML=navbar()
+
+
+</script>
+
+<script src = './scripts/2ndFvPage.js'></script>

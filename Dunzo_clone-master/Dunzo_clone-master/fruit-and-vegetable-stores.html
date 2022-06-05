@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <link rel="stylesheet" href="./styles/fruit_and vegetable.css ">
+  <link rel="stylesheet" href="./styles/navbar.css">
+ </head>
+  <body>
+    <div  id='main_container_T'>
+
+        <!-- navbar container -->
+        <div id="navbar-R">
+               
+            
+            
+          </div>
+   
+    <!-- title and image -->
+    <div id="TI_container_T">
+        <p id="home_T">Home<span id="fv_h_t">-> Fruits & Vegetables</span></p>
+        <div id="title_div">
+        <div>
+        <img id ='TI_img' src="https://ik.imagekit.io/dunzo/icons/website/bluegreen/category/fruitsVegetables.png?tr=w-88,h-88,cm-pad_resize" alt="">
+        
+      
+    </div>
+    <div>
+        
+        <h2>Order Fruits & Vegetables</h2>
+        <p class="min_t">14 Stores</p>
+    </div>
+        
+    </div>
+</div>
+    <!-- container of products -->
+    <div id="container_fv_T"></div>
+
+</div>
+
+</body>
+</html>
+<!-- Navbar Import -->
+<script type="module" >
+
+       import navbar from "./components/navbar.js"
+ console.log("navbar",navbar)
+let navbar_div=document.getElementById('navbar-R')
+ navbar_div.innerHTML=navbar()
+
+ 
+
+</script>
+
+<script src="./scripts/fruit-and-vegetable-stores.js">
+ 
+</script>
+
+

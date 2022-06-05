@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" href="./styles/cart.css">
+       <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+<body>
+    <div id="Cart_Main_Container_T">
+        
+         <!-- navbar container -->
+         <div id="navbar-R">
+            </div>
+
+            <div id="cart_items_container">
+
+        <div id="cart_items"></div>
+        <div id="Total_div">
+
+            <h2>Invoice</h2>
+        </div>
+
+        <div id="add_address_T">
+            <h2>Add delivery Address</h2>
+           <input type="text" id="textArea" placeholder="Enter your Address">
+           <button id="add_btn">Add Address</button>
+        </div>
+
+        <div id="display_add">
+            <h2>Pay Via debit/Credit Card</h2>
+            <input type="number" placeholder="Enter card Number" class="card ">
+            <input type="number" placeholder="Enter CVV" class="card ">
+            <input type="text" placeholder="Enter Expiry Date" class="card ">
+            
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
+
+
+<!-- Navbar Import -->
+<script type="module">
+    import navbar from "./components/navbar.js"
+ console.log("navbar",navbar)
+let navbar_div=document.getElementById('navbar-R')
+ navbar_div.innerHTML=navbar()
+
+
+</script>
+
+<script src ='./scripts/cart.js'></script>
